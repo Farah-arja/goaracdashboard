@@ -1,0 +1,23 @@
+# OpenCart runtime files
+storage/cache/*
+storage/logs/*
+storage/session/*
+storage/download/*
+storage/modification/*
+
+# Sensitive configuration
+config.php
+admin/config.php
+
+# Environment
+.env
+.env.*
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
