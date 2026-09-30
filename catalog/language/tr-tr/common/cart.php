@@ -1,0 +1,8 @@
+<?php
+
+// Text
+$_['text_items']     = '%s ürün - %s';
+$_['text_empty']     = 'Alışveriş sepetiniz boş!';
+$_['text_cart']      = 'Sepetime Git';
+$_['text_checkout']  = 'Alışverişi Tamamla';
+$_['text_recurring'] = 'Ödeme Profili';

@@ -1,0 +1,1229 @@
+{{ header }}{{ column_left }}
+<div id="content" class="order-info-page">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        {% if import_reservation_url|default('') %}
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#import-reservation-modal" title="Import Reservation"><i class="fa fa-cloud-download"></i> Import Reservation</button>
+        {% endif %}
+        {% if admin_pdf_url|default('') %}
+        <a href="{{ admin_pdf_url }}" target="_blank" rel="noopener" data-toggle="tooltip" title="Download customer voucher PDF" class="btn btn-success"><i class="fa fa-download"></i></a>
+        {% endif %}
+        <a href="{{ edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+      </div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+          <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid order-info-sections">
+    {% set is_pending = (order_status_id == 1) %}
+
+    <div class="order-info-hero-summary">
+      <div class="order-info-hero-title">
+        <div class="order-info-eyebrow">Reservation overview</div>
+        <h2>Order #{{ order_id }}{% if reservation_number|default('') %} · {{ reservation_number }}{% endif %}</h2>
+        <div class="order-info-hero-meta">
+          <span class="label label-order-status">{{ order_status }}</span>
+          {% if provider_name|default('') %}<span>{{ provider_name }}</span>{% endif %}
+          {% if date_added|default('') %}<span>{{ date_added }}</span>{% endif %}
+        </div>
+      </div>
+      <div class="order-info-kpi-grid">
+        <div class="order-info-kpi">
+          <span>Reservation data</span>
+          <strong>{{ reservation_customer.full_name|default('—') }}</strong>
+          <small>{{ reservation_customer.email|default('—') }}</small>
+        </div>
+        <div class="order-info-kpi">
+          <span>Customer account</span>
+          <strong>{{ account_customer.label|default('PUBLIC CUSTOMER') }}</strong>
+          <small>{% if account_customer.email|default('') %}{{ account_customer.email }}{% elseif account_customer.telephone|default('') %}{{ account_customer.telephone }}{% else %}Guest reservation{% endif %}</small>
+        </div>
+        <div class="order-info-kpi">
+          <span>Provider reservation</span>
+          <strong>{{ reservation_id|default('—') }}</strong>
+          <small>{{ provider_order_id|default('No provider order yet') }}</small>
+        </div>
+      </div>
+    </div>
+
+    {% if financial_summary is defined %}
+    <div class="order-financial-strip">
+      <div class="order-financial-item">
+        <span>BUY PRICE</span>
+        <strong>{{ financial_summary.buy_total|default('-') }}</strong>
+        <small>Yolcu cost in TRY</small>
+      </div>
+      <div class="order-financial-item">
+        <span>SELL PRICE</span>
+        <strong>{{ financial_summary.sell_total|default('-') }}</strong>
+        <small>Customer charged amount</small>
+      </div>
+      <div class="order-financial-item order-financial-profit">
+        <span>PROFIT</span>
+        <strong>{{ financial_summary.profit_total|default('-') }}</strong>
+        <small>Always calculated in TRY</small>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="panel panel-default order-info-panel order-info-panel-order">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-shopping-cart"></i> {{ text_order_detail }}</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <dl class="dl-horizontal order-info-dl">
+	              <dt>{{ text_order_id }}</dt>
+	              <dd>{{ order_id }}</dd>
+	              <dt>{{ text_reservation_number }}</dt>
+	              <dd><strong>{{ reservation_number|default('—') }}</strong></dd>
+	              {% if not is_pending %}
+              <dt>{{ text_provider_order_id }}</dt>
+              <dd>{{ provider_order_id }}</dd>
+              <dt>{{ text_provider_name }}</dt>
+              <dd>{{ provider_name }}</dd>
+              <dt>{{ text_reservation_id }}</dt>
+              <dd>{{ reservation_id }}</dd>
+              {% endif %}
+            </dl>
+          </div>
+          <div class="col-sm-6">
+            <dl class="dl-horizontal order-info-dl">
+              <dt>{{ text_order_status }}</dt>
+              <dd><span class="label label-order-status">{{ order_status }}</span></dd>
+              <dt>{{ text_date_added }}</dt>
+              <dd>{{ date_added }}</dd>
+              <dt>{{ text_date_modified }}</dt>
+              <dd>{{ date_modified }}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% if car_details %}
+    <div class="panel panel-default order-info-panel order-info-panel-car">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-car"></i> Car / Vehicle</h3>
+      </div>
+      <div class="panel-body">
+        <div class="order-info-car-hero">
+          {% if car_details.image is defined and car_details.image %}
+          <div class="order-info-car-image-wrap">
+            <img src="{{ car_details.image }}" alt="{{ car_details.brand|default('') }} {{ car_details.model|default('') }}" class="order-info-car-image" />
+          </div>
+          {% endif %}
+          <div class="order-info-car-hero-content">
+            <div class="order-info-car-title">{{ car_details.brand|default('') }} {{ car_details.model|default('') }}</div>
+            {% if car_details.class is defined and car_details.class %}
+            <div class="order-info-car-class">{{ car_details.class }}</div>
+            {% endif %}
+            <div class="order-info-car-meta">
+              <span class="order-info-badge">{{ car_details.seatCount|default('—') }} <i class="fa fa-users"></i></span>
+              <span class="order-info-badge">{{ car_details.transmission|default('—') }}</span>
+              <span class="order-info-badge">{{ car_details.fuel|default('—') }}</span>
+              <span class="order-info-badge">{{ car_details.rentalDurationInDays|default('—') }} day(s)</span>
+              <span class="order-info-badge">{{ car_details.deliveryType|default('—') }}</span>
+            </div>
+            <div class="order-info-car-price">{{ car_details_formatted_price|default(car_details.price|default('—') ~ ' ' ~ car_details.currency|default('')) }}</div>
+          </div>
+        </div>
+        {% if pickup or dropoff %}
+        <div class="order-info-appointment">
+          <div class="row">
+            {% if pickup %}
+            <div class="col-sm-6">
+              <div class="order-info-location-card">
+                <div class="order-info-location-title">Pickup</div>
+                {% if pickup.date_time %}
+                <div class="order-info-location-row"><span>Date/Time</span><strong>{{ pickup.date_time }}</strong></div>
+                {% endif %}
+                {% if pickup.iata %}
+                <div class="order-info-location-row"><span>Office</span><strong>{{ pickup.iata }}</strong></div>
+                {% endif %}
+                {% if pickup.delivery_type %}
+                <div class="order-info-location-row"><span>Delivery</span><strong>{{ pickup.delivery_type }}</strong></div>
+                {% endif %}
+                {% if pickup.address_lines is defined and pickup.address_lines|length > 0 %}
+                <div class="order-info-location-row"><span>Address</span>
+                  <ul class="order-info-location-list">
+                    {% for line in pickup.address_lines %}
+                    <li>{{ line }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if pickup.phones is defined and pickup.phones|length > 0 %}
+                <div class="order-info-location-row"><span>Phone</span><strong>{{ pickup.phones|join(', ') }}</strong></div>
+                {% endif %}
+                {% if pickup.email %}
+                <div class="order-info-location-row"><span>Email</span><strong>{{ pickup.email }}</strong></div>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+            {% if dropoff %}
+            <div class="col-sm-6">
+              <div class="order-info-location-card">
+                <div class="order-info-location-title">Dropoff</div>
+                {% if dropoff.date_time %}
+                <div class="order-info-location-row"><span>Date/Time</span><strong>{{ dropoff.date_time }}</strong></div>
+                {% endif %}
+                {% if dropoff.iata %}
+                <div class="order-info-location-row"><span>Office</span><strong>{{ dropoff.iata }}</strong></div>
+                {% endif %}
+                {% if dropoff.delivery_type %}
+                <div class="order-info-location-row"><span>Delivery</span><strong>{{ dropoff.delivery_type }}</strong></div>
+                {% endif %}
+                {% if dropoff.address_lines is defined and dropoff.address_lines|length > 0 %}
+                <div class="order-info-location-row"><span>Address</span>
+                  <ul class="order-info-location-list">
+                    {% for line in dropoff.address_lines %}
+                    <li>{{ line }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if dropoff.phones is defined and dropoff.phones|length > 0 %}
+                <div class="order-info-location-row"><span>Phone</span><strong>{{ dropoff.phones|join(', ') }}</strong></div>
+                {% endif %}
+                {% if dropoff.email %}
+                <div class="order-info-location-row"><span>Email</span><strong>{{ dropoff.email }}</strong></div>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        <div class="row order-info-car-extras-row">
+          <div class="col-sm-7">
+            <div class="order-info-car-block">
+              <div class="order-info-block-header">
+                <div class="order-info-block-title">Car details</div>
+                {% if not is_pending %}
+                <div class="order-info-block-total">
+                  <span class="text-muted">{{ text_total }}</span>
+                  <strong class="text-success">{{ provider_total|default(total) }}</strong>
+                </div>
+                {% endif %}
+              </div>
+              <div class="row order-info-car-details">
+                <div class="col-sm-6">
+                  <dl class="dl-horizontal order-info-dl">
+                    <dt>Brand</dt>
+                    <dd>{{ car_details.brand|default('—') }}</dd>
+                    <dt>Model</dt>
+                    <dd>{{ car_details.model|default('—') }}</dd>
+                    {% if car_details.class is defined and car_details.class %}
+                    <dt>Class</dt>
+                    <dd>{{ car_details.class }}</dd>
+                    {% endif %}
+                    <dt>Seats</dt>
+                    <dd>{{ car_details.seatCount|default('—') }}</dd>
+                    <dt>Transmission</dt>
+                    <dd>{{ car_details.transmission|default('—') }}</dd>
+                    <dt>Fuel</dt>
+                    <dd>{{ car_details.fuel|default('—') }}</dd>
+                    <dt>Rental duration</dt>
+                    <dd>{{ car_details.rentalDurationInDays|default('—') }} day(s)</dd>
+                    <dt>Delivery type</dt>
+                    <dd>{{ car_details.deliveryType|default('—') }}</dd>
+                  </dl>
+                </div>
+                <div class="col-sm-6">
+                  <dl class="dl-horizontal order-info-dl">
+                    <dt>Price</dt>
+                    <dd><strong class="text-success">{{ car_details_formatted_price|default(car_details.price|default('—') ~ ' ' ~ car_details.currency|default('')) }}</strong></dd>
+                    {% if car_details.vendor is defined and car_details.vendor %}
+                    <dt>Vendor</dt>
+                    <dd class="order-info-vendor">
+                      {% if car_details.vendor.logo is defined and car_details.vendor.logo %}
+                      <img src="{{ car_details.vendor.logo }}" alt="{{ car_details.vendor.displayName|default(car_details.vendor.name) }}" class="order-info-vendor-logo" />
+                      {% endif %}
+                      <span>{{ car_details.vendor.displayName|default(car_details.vendor.name)|default('—') }}</span>
+                    </dd>
+                    {% if car_details.vendor.telephone is defined and car_details.vendor.telephone %}
+                    <dt>Vendor phone</dt>
+                    <dd>{{ car_details.vendor.telephone }}</dd>
+                    {% endif %}
+                    {% if car_details.vendor.email is defined and car_details.vendor.email %}
+                    <dt>Vendor email</dt>
+                    <dd>{{ car_details.vendor.email }}</dd>
+                    {% endif %}
+                    {% endif %}
+                    {% if car_details.rentalConditionsPDF is defined and car_details.rentalConditionsPDF %}
+                    <dt>Rental conditions</dt>
+                    <dd><a href="{{ car_details.rentalConditionsPDF }}" target="_blank" rel="noopener" class="order-info-pdf-link">PDF <i class="fa fa-external-link"></i></a></dd>
+                    {% endif %}
+                  </dl>
+                </div>
+              </div>
+              {% if car_details.rules is defined and car_details.rules %}
+              <div class="order-info-rules order-info-rules-inline">
+                <h4 class="order-info-subtitle">Rules</h4>
+                <ul class="order-info-rules-list">
+                  {% if car_details.rules.deposit is defined and car_details.rules.deposit %}
+                  <li>Deposit: {{ car_details.rules.deposit.amount|default('') }} {{ car_details.rules.deposit.currency|default('') }}</li>
+                  {% endif %}
+                  {% if car_details.rules.rangeLimit is defined and car_details.rules.rangeLimit %}
+                  <li>{% if car_details.rules.rangeLimit.unlimited %}Unlimited km{% else %}Range limit: {{ car_details.rules.rangeLimit.amount|default('') }} {{ car_details.rules.rangeLimit.unit|default('km') }} ({{ car_details.rules.rangeLimit.period|default('total') }}){% endif %}</li>
+                  {% endif %}
+                  {% if car_details.rules.minDriverAge is defined %}
+                  <li>Min. driver age: {{ car_details.rules.minDriverAge }}</li>
+                  {% endif %}
+                  {% if car_details.rules.minLicenseYear is defined %}
+                  <li>Min. license years: {{ car_details.rules.minLicenseYear }}</li>
+                  {% endif %}
+                </ul>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="order-info-extras-block">
+              <div class="order-info-block-header">
+                <div class="order-info-block-title">Extra Products</div>
+                {% if extra_products is defined and extra_products|length > 0 %}
+                <div class="order-info-block-sub">{{ extra_products|length }} item(s)</div>
+                {% endif %}
+              </div>
+              {% if extra_products is defined and extra_products|length > 0 %}
+              <div class="order-info-extra-list">
+                {% for extra in extra_products %}
+                <div class="order-info-extra-card">
+                  <div>
+                    <strong>{{ extra.name is defined ? extra.name : (extra.type is defined ? extra.type : '—') }}</strong>
+                    <small>Qty {{ extra.quantity is defined ? extra.quantity : 1 }}</small>
+                  </div>
+                  {% if extra.price is defined and extra.price is not null %}
+                  <span>{{ extra.price }}{% if extra.currency is defined and extra.currency %} {{ extra.currency }}{% endif %}</span>
+                  {% endif %}
+                </div>
+                {% endfor %}
+              </div>
+              {% else %}
+              <div class="order-info-empty">No extra products</div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="panel panel-default order-info-panel order-info-panel-customer">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-user"></i> Reservation &amp; Customer</h3>
+      </div>
+      <div class="panel-body">
+        <div class="order-info-customer-grid">
+          <div class="order-info-customer-card">
+            <div class="order-info-block-title">Reservation driver</div>
+            <dl class="dl-horizontal order-info-dl">
+              <dt>Name</dt>
+              <dd>{{ reservation_customer.full_name|default('—') }}</dd>
+              <dt>{{ text_passport_or_id }}</dt>
+              <dd>{{ reservation_customer.passport_or_id|default('—') }}</dd>
+              <dt>{{ text_email }}</dt>
+              <dd>{{ reservation_customer.email|default('—') }}</dd>
+              <dt>{{ text_telephone }}</dt>
+              <dd>{{ reservation_customer.telephone|default('—') }}</dd>
+              <dt>{{ text_language_id }}</dt>
+              <dd>{{ reservation_customer.language_id|default('—') }}</dd>
+            </dl>
+          </div>
+          <div class="order-info-customer-card">
+            <div class="order-info-block-title">Customer account</div>
+            {% if account_customer.is_public %}
+            <div class="order-info-public-customer">PUBLIC CUSTOMER</div>
+            <p class="text-muted order-info-public-help">This reservation was created without a logged-in customer account.</p>
+            {% else %}
+            <dl class="dl-horizontal order-info-dl">
+              <dt>{{ text_customer_id }}</dt>
+              <dd><a href="{{ account_customer.edit_url }}" target="_blank" rel="noopener">#{{ account_customer.customer_id }}</a></dd>
+              <dt>{{ text_customer_group }}</dt>
+              <dd>{{ account_customer.customer_group_id|default('—') }}</dd>
+              <dt>Name</dt>
+              <dd>{{ account_customer.full_name|default(account_customer.label)|default('—') }}</dd>
+              <dt>{{ text_email }}</dt>
+              <dd>{{ account_customer.email|default('—') }}</dd>
+              <dt>{{ text_telephone }}</dt>
+              <dd>{{ account_customer.telephone|default('—') }}</dd>
+            </dl>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% if invoice_id is defined and invoice_id %}
+    <div class="panel panel-default order-info-panel order-info-panel-invoice">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-file-text-o"></i> Invoice Information</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <dl class="dl-horizontal order-info-dl">
+              <dt>Invoice ID</dt>
+              <dd>{{ invoice_id }}</dd>
+              <dt>Type</dt>
+              <dd>{{ invoice_type|default('—') }}</dd>
+              {% if invoice_type is defined and invoice_type == 'corporate company' %}
+              <dt>Title</dt>
+              <dd>{{ invoice_title|default('—') }}</dd>
+              <dt>Tax Number</dt>
+              <dd>{{ invoice_tax_number|default('—') }}</dd>
+              {% elseif invoice_type is defined and invoice_type == 'private company' %}
+              <dt>First Name</dt>
+              <dd>{{ invoice_firstname|default('—') }}</dd>
+              <dt>Last Name</dt>
+              <dd>{{ invoice_lastname|default('—') }}</dd>
+              <dt>Identity Number</dt>
+              <dd>{{ invoice_identity_number|default('—') }}</dd>
+              {% endif %}
+              <dt>Tax Office</dt>
+              <dd>{{ invoice_tax_office|default('—') }}</dd>
+            </dl>
+          </div>
+          <div class="col-sm-6">
+            <dl class="dl-horizontal order-info-dl">
+              <dt>Country</dt>
+              <dd>{{ invoice_country|default('—') }}</dd>
+              <dt>City</dt>
+              <dd>{{ invoice_city|default('—') }}</dd>
+              <dt>District</dt>
+              <dd>{{ invoice_district|default('—') }}</dd>
+              <dt>ZIP Code</dt>
+              <dd>{{ invoice_zip_code|default('—') }}</dd>
+              <dt>Status</dt>
+              <dd>{{ invoice_status|default('—') }}</dd>
+              <dt>Address</dt>
+              <dd>{{ invoice_detailed_address|default(invoice_address_description|default('—')) }}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if comment %}
+    <div class="panel panel-default order-info-panel order-info-panel-comment">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-comment"></i> {{ text_comment }}</h3>
+      </div>
+      <div class="panel-body">
+        <p class="order-comment">{{ comment }}</p>
+      </div>
+    </div>
+	    {% endif %}
+
+    <div class="panel panel-default order-info-panel order-info-panel-admin-note">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-lock"></i> Admin note</h3>
+      </div>
+      <div class="panel-body">
+        <p class="text-muted order-info-note-help">Internal note only. This is visible to admin users and is never shown to customers.</p>
+        <textarea id="order-admin-note" class="form-control order-admin-note-textarea" rows="4" placeholder="Write an internal note for this reservation...">{{ admin_note|default('') }}</textarea>
+        <div class="order-admin-note-actions">
+          <button type="button" class="btn btn-primary" id="save-admin-note" data-url="{{ save_admin_note|default('') }}"><i class="fa fa-save"></i> Save note</button>
+          <span id="admin-note-status" class="order-admin-note-status"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% if import_reservation_url|default('') %}
+<div class="modal fade" id="import-reservation-modal" tabindex="-1" role="dialog" aria-labelledby="import-reservation-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="import-reservation-title">Import Reservation</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Use this only after support manually creates a replacement reservation in Yolcu360. The local order passenger, car, supplier reference, totals, and provider response will be replaced from Yolcu360.</p>
+        <div class="form-group">
+          <label for="import-yolcu-order-id">Yolcu360 order ID</label>
+          <input type="text" class="form-control" id="import-yolcu-order-id" value="{{ import_reservation_default_id|default('') }}" placeholder="YLP_10236090" autocomplete="off">
+        </div>
+        <div class="alert alert-warning">
+          This does not create a new bank payment. Confirm the payment/refund decision before importing.
+        </div>
+        <div id="import-reservation-status" class="order-import-status"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-warning" id="submit-import-reservation" data-url="{{ import_reservation_url }}"><i class="fa fa-cloud-download"></i> Import Reservation</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+<style>
+/* Order info page – clean, readable layout */
+.order-info-page .order-info-sections { padding-bottom: 24px; }
+.order-info-hero-summary {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.6fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.order-info-hero-title,
+.order-info-kpi {
+  border: 1px solid #e6eaef;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
+}
+.order-info-hero-title {
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #101827 0%, #152238 58%, #0f9aac 100%);
+  color: #fff;
+}
+.order-info-eyebrow {
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.order-info-hero-title h2 {
+  margin: 8px 0 12px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+	.order-info-hero-meta {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap: 8px;
+  align-items: center;
+	  color: rgba(255,255,255,0.82);
+	  font-size: 12px;
+	}
+	.order-financial-strip {
+	  display: grid;
+	  grid-template-columns: repeat(3, minmax(0, 1fr));
+	  gap: 12px;
+	  margin: -8px 0 20px;
+	}
+	.order-financial-item {
+	  border: 1px solid #e6eaef;
+	  border-radius: 10px;
+	  background: #fff;
+	  padding: 14px 16px;
+	  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+	}
+	.order-financial-item span {
+	  display: block;
+	  color: #6b7280;
+	  font-size: 11px;
+	  font-weight: 700;
+	  letter-spacing: .06em;
+	}
+	.order-financial-item strong {
+	  display: block;
+	  color: #111827;
+	  font-size: 18px;
+	  margin-top: 6px;
+	}
+	.order-financial-item small {
+	  display: block;
+	  color: #6b7280;
+	  margin-top: 4px;
+	}
+	.order-financial-profit {
+	  border-color: #bfead8;
+	  background: #f5fffb;
+	}
+	.order-financial-profit strong { color: #12805c; }
+	.order-info-kpi-grid {
+	  display: grid;
+	  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.order-info-kpi {
+  min-width: 0;
+  padding: 16px;
+}
+.order-info-kpi span {
+  display: block;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.order-info-kpi strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #111827;
+  font-size: 17px;
+  margin-top: 8px;
+}
+.order-info-kpi small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.order-info-page .order-info-panel {
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+  border-color: #e8e8e8;
+}
+.order-info-page .order-info-panel .panel-heading {
+  border-radius: 6px 6px 0 0;
+  background: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 16px;
+}
+.order-info-page .order-info-panel .panel-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.order-info-page .order-info-panel .panel-title .fa { margin-right: 8px; color: #5a5a5a; }
+	.order-info-page .order-info-panel .panel-body { padding: 18px 20px; }
+	.order-admin-note-textarea {
+	  min-height: 96px;
+	  resize: vertical;
+	}
+	.order-admin-note-actions {
+	  display: flex;
+	  align-items: center;
+	  gap: 10px;
+	  margin-top: 12px;
+	}
+	.order-info-note-help {
+	  margin: 0 0 10px;
+	}
+	.order-admin-note-status {
+	  color: #6b7280;
+	  font-size: 12px;
+	}
+	.order-admin-note-status.is-success { color: #12805c; }
+.order-admin-note-status.is-error { color: #a94442; }
+.order-import-status { min-height: 20px; font-weight: 600; }
+.order-import-status.is-success { color: #3c763d; }
+.order-import-status.is-error { color: #a94442; }
+
+.order-info-dl.dl-horizontal { margin-bottom: 0; }
+.order-info-dl.dl-horizontal dt {
+  width: 180px;
+  color: #6b6b6b;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 4px 0;
+}
+.order-info-dl.dl-horizontal dd {
+  margin-left: 200px;
+  padding: 4px 0;
+  font-size: 13px;
+}
+.label-order-status {
+  background: linear-gradient(180deg, #5cb85c 0%, #4cae4c 100%);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Car / Vehicle panel – hero block */
+.order-info-panel-car .order-info-car-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #eef1f4 100%);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e8ec;
+}
+.order-info-car-image-wrap {
+  flex-shrink: 0;
+  width: 160px;
+  height: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e5e8ec;
+}
+.order-info-car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.order-info-car-hero-content { flex: 1; min-width: 0; }
+.order-info-car-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+.order-info-car-class {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.order-info-car-meta { margin-bottom: 12px; }
+.order-info-badge {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #495057;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+.order-info-badge .fa { margin-right: 4px; opacity: 0.8; }
+.order-info-car-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #28a745;
+}
+.order-info-car-details { margin-top: 8px; }
+.order-info-vendor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.order-info-vendor-logo {
+  max-height: 28px;
+  max-width: 100px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.order-info-pdf-link { font-weight: 500; }
+.order-info-rules {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+.order-info-subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+.order-info-rules-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+.order-info-rules-list li {
+  padding: 4px 0;
+  padding-left: 16px;
+  position: relative;
+}
+.order-info-rules-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+.order-long-value {
+  display: block;
+  max-height: 80px;
+  overflow: auto;
+  word-break: break-all;
+  font-size: 11px;
+  padding: 10px 12px;
+  margin-top: 4px;
+  background: #f4f4f5;
+  border: 1px solid #e5e5e6;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+.order-code-inline {
+  font-size: 12px;
+  word-break: break-all;
+  background: #f4f4f5;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+/* Extra products table */
+.order-info-extras-table thead th {
+  background: #f8f9fa;
+  font-weight: 600;
+  font-size: 13px;
+  color: #495057;
+  border-color: #dee2e6;
+  padding: 10px 12px;
+}
+.order-info-extras-table tbody td { padding: 10px 12px; font-size: 13px; }
+
+/* Car + extras side-by-side */
+.order-info-car-extras-row { margin-top: 8px; }
+.order-info-car-block, .order-info-extras-block {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+  padding: 14px 16px;
+}
+.order-info-extras-block { background: #fafbfc; border-color: #e6eaee; }
+.order-info-appointment { margin: 16px 0 10px; }
+.order-info-location-card {
+  border: 1px solid #e6eaee;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+.order-info-location-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 10px;
+}
+.order-info-location-row {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+.order-info-location-row span {
+  min-width: 70px;
+  color: #6b7280;
+}
+.order-info-location-row strong {
+  min-width: 0;
+  font-weight: 600;
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+.order-info-location-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #4b5563;
+}
+.order-info-location-list li { padding: 2px 0; }
+.order-info-block-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.order-info-block-title { font-size: 13px; font-weight: 700; color: #374151; }
+.order-info-block-sub { font-size: 12px; color: #6b7280; white-space: nowrap; }
+.order-info-block-total { font-size: 13px; white-space: nowrap; }
+.order-info-block-total .text-muted { margin-right: 8px; }
+.order-info-empty { color: #6b7280; font-size: 13px; padding: 10px 2px; }
+.order-info-extra-list {
+  display: grid;
+  gap: 10px;
+}
+.order-info-extra-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #edf0f4;
+  border-radius: 10px;
+  background: #fbfcfd;
+  padding: 12px 14px;
+}
+.order-info-extra-card strong {
+  display: block;
+  color: #111827;
+  font-size: 13px;
+}
+.order-info-extra-card small {
+  display: block;
+  color: #6b7280;
+  margin-top: 3px;
+}
+.order-info-extra-card span {
+  color: #111827;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.order-info-customer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.order-info-customer-card {
+  min-width: 0;
+  border: 1px solid #eef1f5;
+  border-radius: 10px;
+  background: #fbfcfd;
+  padding: 14px 16px;
+}
+.order-info-customer-card .order-info-block-title {
+  margin-bottom: 10px;
+  color: #111827;
+}
+.order-info-public-customer {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  padding: 7px 12px;
+}
+.order-info-public-help {
+  margin: 10px 0 0;
+}
+
+.order-provider-response {
+  max-height: 320px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #f8f9fa;
+  padding: 14px 16px;
+  border: 1px solid #e8e8e8;
+  font-size: 12px;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+}
+.order-provider-response .jsk { color: #31708f; }
+.order-provider-response .jsn { color: #3c763d; }
+.order-provider-response .jsl { color: #8a6d3b; }
+.order-comment {
+  margin: 0;
+  padding: 12px 16px;
+  background: #f8fbfd;
+  border-left: 4px solid #5bc0de;
+  border-radius: 0 4px 4px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.api-audit-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.api-audit-filters .btn.active {
+  background: #1f2937;
+  color: #fff;
+  border-color: #1f2937;
+}
+.api-audit-timeline {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 22px;
+  border-left: 2px solid #e5e7eb;
+}
+.api-audit-item {
+  position: relative;
+  margin-bottom: 14px;
+}
+.api-audit-item.is-hidden { display: none; }
+.api-audit-marker {
+  position: absolute;
+  left: -31px;
+  top: 18px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #5bc0de;
+  background: #fff;
+  border-radius: 50%;
+}
+.api-audit-item.is-failed .api-audit-marker {
+  border-color: #d9534f;
+}
+.api-audit-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  padding: 14px;
+}
+.api-audit-item.is-failed .api-audit-card {
+  border-color: #f0b9b7;
+  background: #fffafa;
+}
+.api-audit-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+.api-audit-step {
+  font-weight: 700;
+  color: #111827;
+}
+.api-audit-route,
+.api-audit-status small,
+.api-audit-endpoint {
+  color: #6b7280;
+  font-size: 12px;
+}
+.api-audit-status {
+  text-align: right;
+  white-space: nowrap;
+}
+.api-audit-facts {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.api-audit-facts span {
+  background: #f9fafb;
+  border: 1px solid #edf0f2;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 12px;
+}
+.api-audit-facts strong {
+  display: block;
+  color: #6b7280;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.api-audit-endpoint {
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+}
+.api-audit-error {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-left: 4px solid #d9534f;
+  background: #fff2f2;
+  color: #a94442;
+  font-size: 12px;
+}
+.api-audit-json-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.api-audit-details {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 8px;
+  background: #fcfcfd;
+}
+.api-audit-details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.api-audit-copy {
+  float: right;
+  margin: -24px 0 6px 8px;
+}
+.api-audit-copy.copied {
+  color: #5cb85c;
+}
+	@media (max-width: 1199px) {
+	  .order-info-hero-summary { grid-template-columns: 1fr; }
+	  .order-info-kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	  .order-financial-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	}
+	@media (max-width: 767px) {
+  .order-info-page .page-header .pull-right {
+    float: none !important;
+    margin-bottom: 12px;
+  }
+  .order-info-hero-title h2 { font-size: 20px; }
+	  .order-info-kpi-grid,
+	  .order-info-customer-grid,
+	  .order-financial-strip,
+	  .api-audit-json-grid,
+	  .api-audit-facts {
+	    grid-template-columns: 1fr;
+	  }
+  .api-audit-card-head {
+    flex-direction: column;
+  }
+  .api-audit-status {
+    text-align: left;
+  }
+  .order-info-panel-car .order-info-car-hero {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .order-info-car-image-wrap {
+    width: 100%;
+    height: 150px;
+  }
+  .order-info-dl.dl-horizontal dt {
+    width: auto;
+    float: none;
+    text-align: left;
+  }
+  .order-info-dl.dl-horizontal dd {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+  .order-provider-response {
+    max-height: 260px;
+    font-size: 11px;
+  }
+}
+</style>
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+	    var noteButton = document.getElementById('save-admin-note');
+	    if (noteButton) {
+	      noteButton.addEventListener('click', function() {
+	        var noteField = document.getElementById('order-admin-note');
+	        var status = document.getElementById('admin-note-status');
+	        var url = noteButton.getAttribute('data-url') || '';
+	        if (!url || !noteField) return;
+	        noteButton.disabled = true;
+	        if (status) {
+	          status.className = 'order-admin-note-status';
+	          status.textContent = 'Saving...';
+	        }
+	        var body = 'admin_note=' + encodeURIComponent(noteField.value || '');
+	        fetch(url, {
+	          method: 'POST',
+	          headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
+	          credentials: 'same-origin',
+	          body: body
+	        }).then(function(response) {
+	          return response.json();
+	        }).then(function(payload) {
+	          if (payload && payload.success) {
+	            if (status) {
+	              status.className = 'order-admin-note-status is-success';
+	              status.textContent = payload.success;
+	            }
+	          } else {
+	            throw new Error((payload && payload.error) || 'Could not save note.');
+	          }
+	        }).catch(function(error) {
+	          if (status) {
+	            status.className = 'order-admin-note-status is-error';
+	            status.textContent = error.message || 'Could not save note.';
+	          }
+	        }).then(function() {
+	          noteButton.disabled = false;
+	        });
+	      });
+	    }
+	    var importButton = document.getElementById('submit-import-reservation');
+	    if (importButton) {
+	      importButton.addEventListener('click', function() {
+	        var input = document.getElementById('import-yolcu-order-id');
+	        var status = document.getElementById('import-reservation-status');
+	        var url = importButton.getAttribute('data-url') || '';
+	        var providerOrderId = input ? (input.value || '').trim() : '';
+	        if (!url || !providerOrderId) {
+	          if (status) {
+	            status.className = 'order-import-status is-error';
+	            status.textContent = 'Yolcu360 order ID is required.';
+	          }
+	          return;
+	        }
+	        importButton.disabled = true;
+	        if (status) {
+	          status.className = 'order-import-status';
+	          status.textContent = 'Importing reservation...';
+	        }
+	        fetch(url, {
+	          method: 'POST',
+	          headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
+	          credentials: 'same-origin',
+	          body: 'yolcu_order_id=' + encodeURIComponent(providerOrderId)
+	        }).then(function(response) {
+	          return response.json();
+	        }).then(function(payload) {
+	          if (payload && payload.success) {
+	            if (status) {
+	              status.className = 'order-import-status is-success';
+	              status.textContent = payload.success + ' Refreshing...';
+	            }
+	            window.setTimeout(function() { window.location.reload(); }, 900);
+	          } else {
+	            throw new Error((payload && payload.error) || 'Reservation import failed.');
+	          }
+	        }).catch(function(error) {
+	          if (status) {
+	            status.className = 'order-import-status is-error';
+	            status.textContent = error.message || 'Reservation import failed.';
+	          }
+	          importButton.disabled = false;
+	        });
+	      });
+	    }
+	    var auditFilterButtons = document.querySelectorAll('[data-api-audit-filter]');
+	    var auditItems = document.querySelectorAll('.api-audit-item');
+	    Array.prototype.forEach.call(auditFilterButtons, function(filterButton) {
+	      filterButton.addEventListener('click', function() {
+	        var filter = filterButton.getAttribute('data-api-audit-filter') || 'all';
+	        Array.prototype.forEach.call(auditFilterButtons, function(button) {
+	          button.classList.toggle('active', button === filterButton);
+	        });
+	        Array.prototype.forEach.call(auditItems, function(item) {
+	          var category = item.getAttribute('data-api-audit-category') || '';
+	          var status = item.getAttribute('data-api-audit-status') || '';
+	          var visible = filter === 'all' || category === filter || (filter === 'failed' && status === 'failed');
+	          item.classList.toggle('is-hidden', !visible);
+	        });
+	      });
+	    });
+	    Array.prototype.forEach.call(document.querySelectorAll('.api-audit-copy'), function(copyButton) {
+	      copyButton.addEventListener('click', function() {
+	        var targetId = copyButton.getAttribute('data-copy-target') || '';
+	        var targetNode = document.getElementById(targetId);
+	        var text = targetNode ? targetNode.textContent : '';
+	        if (!text) return;
+	        function markCopied() {
+	          var icon = copyButton.querySelector('i');
+	          copyButton.classList.add('copied');
+	          if (icon) icon.className = 'fa fa-check';
+	          window.setTimeout(function() {
+	            copyButton.classList.remove('copied');
+	            if (icon) icon.className = 'fa fa-clipboard';
+	          }, 1400);
+	        }
+	        if (navigator.clipboard && navigator.clipboard.writeText) {
+	          navigator.clipboard.writeText(text).then(markCopied);
+	        } else {
+	          var textarea = document.createElement('textarea');
+	          textarea.value = text;
+	          textarea.style.position = 'fixed';
+	          textarea.style.left = '-9999px';
+	          document.body.appendChild(textarea);
+	          textarea.select();
+	          try {
+	            if (document.execCommand('copy')) markCopied();
+	          } catch (e) {}
+	          document.body.removeChild(textarea);
+	        }
+	      });
+	    });
+  });
+})();
+</script>
+{{ footer }}

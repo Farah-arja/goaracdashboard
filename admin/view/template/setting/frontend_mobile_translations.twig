@@ -1,0 +1,263 @@
+{{ header }}{{ column_left }}
+
+<div id="content">
+
+  <div class="page-header">
+    <div class="container-fluid">
+
+      <div class="pull-right">
+
+        <button
+          type="submit"
+          form="form-frontend-mobile-translations"
+          data-toggle="tooltip"
+          title="{{ button_save }}"
+          class="btn btn-primary"
+        >
+          <i class="fa fa-save"></i>
+        </button>
+
+        <a
+          href="{{ cancel }}"
+          data-toggle="tooltip"
+          title="{{ button_cancel }}"
+          class="btn btn-default"
+        >
+          <i class="fa fa-reply"></i>
+        </a>
+
+      </div>
+
+      <h1>{{ heading_title }}</h1>
+
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+          <li>
+            <a href="{{ breadcrumb.href }}">
+              {{ breadcrumb.text }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+
+    {# Error #}
+    {% if error_warning %}
+      <div class="alert alert-danger alert-dismissible">
+        <i class="fa fa-exclamation-circle"></i>
+        {{ error_warning }}
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+        >
+          &times;
+        </button>
+      </div>
+    {% endif %}
+
+
+    {# Success #}
+    {% if success %}
+      <div class="alert alert-success alert-dismissible">
+        <i class="fa fa-check-circle"></i>
+        {{ success }}
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+        >
+          &times;
+        </button>
+      </div>
+    {% endif %}
+
+
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <i class="fa fa-language"></i>
+          {{ text_form }}
+        </h3>
+      </div>
+
+
+      <div class="panel-body">
+
+        <p class="help-block">
+          {{ text_help }}
+        </p>
+
+
+        {# Search #}
+        <div class="form-group">
+          <label class="control-label" for="translation-filter">
+            Search
+          </label>
+
+          <input
+            type="text"
+            id="translation-filter"
+            class="form-control"
+            placeholder="Search translation keys or values"
+          >
+        </div>
+
+
+        <form
+          action="{{ action }}"
+          method="post"
+          enctype="multipart/form-data"
+          id="form-frontend-mobile-translations"
+        >
+
+          <div class="table-responsive">
+
+            <table
+              class="table table-bordered table-hover"
+              id="translation-matrix-table"
+            >
+
+              <thead>
+
+                <tr>
+
+                  <td
+                    class="text-left"
+                    style="width: 28%;"
+                  >
+                    {{ entry_key }}
+                  </td>
+
+                  <td
+                    class="text-left"
+                    style="width: 36%;"
+                  >
+                    {{ entry_tr }}
+                  </td>
+
+                  <td
+                    class="text-left"
+                    style="width: 36%;"
+                  >
+                    {{ entry_en }}
+                  </td>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+                {% if rows %}
+
+                  {% for row in rows %}
+
+                    <tr>
+
+                      {# Key #}
+                      <td class="text-left">
+
+                        <code>
+                          {{ row.key }}
+                        </code>
+
+                        <input
+                          type="hidden"
+                          name="translations[{{ loop.index0 }}][key]"
+                          value="{{ row.key }}"
+                        >
+
+                      </td>
+
+
+                      {# Turkish #}
+                      <td class="text-left">
+
+                        <textarea
+                          name="translations[{{ loop.index0 }}][tr]"
+                          rows="2"
+                          class="form-control"
+                        >{{ row.tr }}</textarea>
+
+                      </td>
+
+
+                      {# English #}
+                      <td class="text-left">
+
+                        <textarea
+                          name="translations[{{ loop.index0 }}][en]"
+                          rows="2"
+                          class="form-control"
+                        >{{ row.en }}</textarea>
+
+                      </td>
+
+                    </tr>
+
+                  {% endfor %}
+
+                {% else %}
+
+                  <tr>
+
+                    <td
+                      colspan="3"
+                      class="text-center"
+                    >
+                      No translations found.
+                    </td>
+
+                  </tr>
+
+                {% endif %}
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript"><!--
+
+$('#translation-filter').on('input', function() {
+
+  var needle = String($(this).val() || '').toLowerCase();
+
+  $('#translation-matrix-table tbody tr').each(function() {
+
+    var haystack = $(this).text().toLowerCase();
+
+    $(this).toggle(
+      !needle ||
+      haystack.indexOf(needle) !== -1
+    );
+
+  });
+
+});
+
+//--></script>
+
+{{ footer }}

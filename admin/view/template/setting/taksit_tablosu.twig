@@ -1,0 +1,311 @@
+{{ header }}
+{{ column_left }}
+
+<div id="content">
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="pull-right">
+                <button type="submit" form="form-taksit-tablosu" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary">
+                    <i class="fa fa-save"></i>
+                </button>
+
+                <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
+                    <i class="fa fa-reply"></i>
+                </a>
+            </div>
+
+            <h1>{{ heading_title }}</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- BKM BIN Information -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <i class="fa fa-credit-card"></i> {{ text_bkm_bin_information }}
+                </h3>
+            </div>
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <!-- Left Section -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label">{{ text_cached_bin_rows }}</label>
+                            <h3>{{ bin_count }}</h3>
+
+                            <p class="text-muted">
+                                {{ text_bin_cache_help }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label">{{ text_last_sync }}</label>
+                            <h3><strong>{{ last_sync }}</strong></h3>
+
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-refresh"></i> {{ button_sync }}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- BKM BIN API & Installment Table -->
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <i class="fa fa-cog"></i> {{ text_bkm_bin_api_installment }}
+                </h3>
+            </div>
+
+            <div class="panel-body">
+
+                <legend class="float-none w-auto px-2 text-primary fw-bold">
+                    {{ text_bkm_api }}
+                </legend>
+
+                <form id="form-taksit-tablosu" action="{{ action }}" method="post">
+
+                    <!-- Status -->
+                    <div class="row mb-3">
+                        <label class="col-sm-3 control-label">
+                            {{ entry_status }}
+                        </label>
+
+                        <div class="col-sm-9">
+                            <input type="hidden"
+                                   name="payment_bkm_bin_status"
+                                   value="0">
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"
+                                           name="payment_bkm_bin_status"
+                                           value="1"
+                                           {% if payment_bkm_bin_status %}checked{% endif %}>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- BKM API Base URL -->
+                    <div class="row mb-3">
+                        <label class="col-sm-3 control-label">
+                            {{ entry_bkm_api_base_url }}
+                        </label>
+
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="payment_bkm_bin_base_url"
+                                   value="{{ payment_bkm_bin_base_url }}"
+                                   placeholder="https://api-prod.bkm.com.tr">
+
+                            <p class="help-block">
+                                {{ help_bkm_api_base_url }}
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Client ID -->
+                    <div class="row mb-3">
+                        <label class="col-sm-3 control-label">
+                            {{ entry_client_id }}
+                        </label>
+
+                        <div class="col-sm-9">
+                            <input type="text"
+                                   class="form-control"
+                                   name="payment_bkm_bin_client_id"
+                                   value="{{ payment_bkm_bin_client_id }}"
+                                   autocomplete="off">
+
+                            <p class="help-block">
+                                {{ help_client_id }}
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Client Secret -->
+                    <div class="row mb-3">
+                        <label class="col-sm-3 control-label">
+                            {{ entry_client_secret }}
+                        </label>
+
+                        <div class="col-sm-9">
+                            <input type="password"
+                                   class="form-control"
+                                   name="payment_bkm_bin_client_secret"
+                                   value="{{ payment_bkm_bin_client_secret }}"
+                                   autocomplete="new-password">
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Installment Commission Rates -->
+                    <fieldset class="border rounded-3 p-3 mb-4">
+
+                        <legend class="float-none w-auto px-2 text-primary fw-bold">
+                            {{ text_installment_commission_rates }}
+                        </legend>
+
+
+                        <!-- Maximum Installment Count -->
+                        <div class="row mb-3">
+                            <label class="col-sm-3 control-label">
+                                {{ entry_max_installment_count }}
+                            </label>
+
+                            <div class="col-sm-9">
+                                <input type="number"
+                                       min="1"
+                                       max="12"
+                                       class="form-control"
+                                       name="payment_bkm_bin_max_installment_count"
+                                       value="{{ payment_bkm_bin_max_installment_count }}">
+                            </div>
+                        </div>
+
+
+                        <!-- Only Credit Cards -->
+                        <div class="row mb-3">
+                            <label class="col-sm-3 control-label">
+                                {{ entry_only_credit_cards }}
+                            </label>
+
+                            <div class="col-sm-9">
+                                <input type="hidden"
+                                       name="payment_bkm_bin_require_credit_card"
+                                       value="0">
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"
+                                               name="payment_bkm_bin_require_credit_card"
+                                               value="1"
+                                               {% if payment_bkm_bin_require_credit_card %}checked{% endif %}>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Only Turkish BIN Cards -->
+                        <div class="row mb-3">
+                            <label class="col-sm-3 control-label">
+                                {{ entry_only_turkish_bin_cards }}
+                            </label>
+
+                            <div class="col-sm-9">
+                                <input type="hidden"
+                                       name="payment_bkm_bin_require_turkish_bin"
+                                       value="0">
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"
+                                               name="payment_bkm_bin_require_turkish_bin"
+                                               value="1"
+                                               {% if payment_bkm_bin_require_turkish_bin %}checked{% endif %}>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Allowed Card Families -->
+                        <div class="row mb-3">
+                            <label class="col-sm-3 control-label">
+                                {{ entry_allowed_card_families }}
+                            </label>
+
+                            <div class="col-sm-9">
+                                <textarea class="form-control"
+                                          rows="3"
+                                          name="payment_bkm_bin_card_family_filter">{{ payment_bkm_bin_card_family_filter }}</textarea>
+
+                                <p class="help-block">
+                                    {{ help_allowed_card_families }}
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Installment Commission Table -->
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered">
+
+                                <thead>
+                                    <tr>
+                                        <th>{{ column_month }}</th>
+                                        <th>{{ column_commission }}</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    {% for month in installment_months %}
+
+                                        <tr>
+
+                                            <td>
+                                                <strong>{{ month }}</strong>
+                                            </td>
+
+                                            <td>
+                                                <div class="input-group">
+
+                                                    <input type="number"
+                                                           step="0.0001"
+                                                           min="0"
+                                                           class="form-control"
+                                                           name="payment_bkm_bin_installment_rates[{{ month }}]"
+                                                           value="{{ payment_bkm_bin_installment_rates[month] }}">
+
+                                                    <span class="input-group-addon">
+                                                        %
+                                                    </span>
+
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                    {% endfor %}
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{{ footer }}

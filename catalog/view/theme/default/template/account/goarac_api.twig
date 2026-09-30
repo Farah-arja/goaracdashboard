@@ -1,0 +1,89 @@
+{{ header }}
+
+<div id="account-api" class="container">
+
+    <ul class="breadcrumb">
+        <li><a href="{{ home }}">{{ text_home }}</a></li>
+        <li><a href="{{ continue }}">My Account</a></li>
+        <li>API Access</li>
+    </ul>
+
+    <div class="row">
+
+        {{ column_left }}
+
+        {% if column_left and column_right %}
+            {% set class = 'col-sm-6' %}
+        {% elseif column_left or column_right %}
+            {% set class = 'col-sm-9' %}
+        {% else %}
+            {% set class = 'col-sm-12' %}
+        {% endif %}
+
+        <div id="content" class="{{ class }}">
+
+            {{ content_top }}
+
+            <h1>API Access</h1>
+
+            {% if not api_access %}
+
+                <p>
+                    You don't have API access yet.
+                </p>
+
+                <form method="post">
+                    <button type="submit" class="btn btn-primary">
+                        Request API Access
+                    </button>
+                </form>
+
+            {% elseif api_access.status == 2 %}
+
+                <h3>API Access Request</h3>
+
+                <p>
+                    Your API access request is waiting for approval.
+                </p>
+
+                <p>
+                    Status: <strong>Pending</strong>
+                </p>
+
+            {% elseif api_access.status == 1 %}
+
+                <h3>API Access</h3>
+
+                <p>
+                    Status: <strong>Active</strong>
+                </p>
+
+                <p>
+                    API Key:
+                </p>
+
+                <input
+                    type="text"
+                    value="{{ api_access.api_key }}"
+                    class="form-control"
+                    readonly
+                >
+
+            {% else %}
+
+                <p>
+                    Your API access is disabled.
+                </p>
+
+            {% endif %}
+
+            {{ content_bottom }}
+
+        </div>
+
+        {{ column_right }}
+
+    </div>
+</div>
+
+{{ footer }}

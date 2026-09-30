@@ -1,0 +1,592 @@
+{{ header }}{{ column_left }}
+
+<div id="content" class="cancel-request-page">
+
+  <div class="page-header">
+    <div class="container-fluid">
+
+      <div class="pull-right">
+        <button
+          type="button"
+          data-toggle="tooltip"
+          title="{{ button_filter }}"
+          onclick="$('#filter-cancel-request').toggleClass('hidden-sm hidden-xs');"
+          class="btn btn-default hidden-md hidden-lg"
+        >
+          <i class="fa fa-filter"></i>
+        </button>
+      </div>
+
+      <h1>{{ heading_title }}</h1>
+
+      {% if breadcrumbs is defined and breadcrumbs|length %}
+        <ul class="breadcrumb">
+          {% for breadcrumb in breadcrumbs %}
+            <li>
+              <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+    </div>
+  </div>
+
+  <div class="container-fluid cancel-request-sections">
+
+    {% if success %}
+      <div class="alert alert-success alert-dismissible">
+        <i class="fa fa-check-circle"></i>
+        {{ success }}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+      </div>
+    {% endif %}
+
+    {% if error_warning %}
+      <div class="alert alert-warning alert-dismissible">
+        <i class="fa fa-exclamation-triangle"></i>
+        {{ error_warning }}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+      </div>
+    {% endif %}
+
+    <div class="row">
+
+      <!-- FILTER -->
+      <div
+        id="filter-cancel-request"
+        class="col-md-3 col-md-push-9 col-sm-12 hidden-sm hidden-xs"
+      >
+
+        <div class="panel panel-default cancel-request-filter-panel">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <i class="fa fa-filter"></i>
+              {{ text_filter }}
+            </h3>
+          </div>
+
+          <div class="panel-body">
+
+            <div class="form-group">
+              <label class="control-label" for="input-status">
+                {{ entry_status }}
+              </label>
+
+              <select name="filter_status" id="input-status" class="form-control">
+                <option value=""></option>
+
+                <option value="pending"{% if filter_status == 'pending' %} selected="selected"{% endif %}>
+                  Pending
+                </option>
+
+                <option value="approved"{% if filter_status == 'approved' %} selected="selected"{% endif %}>
+                  Approved
+                </option>
+
+                <option value="rejected"{% if filter_status == 'rejected' %} selected="selected"{% endif %}>
+                  Rejected
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label" for="input-customer">
+                {{ entry_customer }}
+              </label>
+
+              <input
+                type="text"
+                name="filter_customer"
+                value="{{ filter_customer }}"
+                placeholder="{{ entry_customer }}"
+                id="input-customer"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label" for="input-reason">
+                {{ entry_reason }}
+              </label>
+
+              <input
+                type="text"
+                name="filter_reason"
+                value="{{ filter_reason }}"
+                placeholder="{{ entry_reason }}"
+                id="input-reason"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label" for="input-date">
+                {{ entry_date_added }}
+              </label>
+
+              <div class="input-group date">
+                <input
+                  type="text"
+                  name="filter_date"
+                  value="{{ filter_date }}"
+                  placeholder="YYYY-MM-DD"
+                  data-date-format="YYYY-MM-DD"
+                  id="input-date"
+                  class="form-control"
+                />
+
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-calendar"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group text-right">
+              <button type="button" id="button-filter" class="btn btn-default">
+                <i class="fa fa-filter"></i>
+                {{ button_filter }}
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- LIST -->
+      <div class="col-md-9 col-md-pull-3 col-sm-12">
+
+        <div class="panel panel-default cancel-request-panel">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <i class="fa fa-times-circle"></i>
+              {{ text_list }}
+            </h3>
+          </div>
+
+          <div class="panel-body">
+
+            {% if cancel_requests|length %}
+
+              <div class="cancel-request-cards">
+
+                {% for req in cancel_requests %}
+
+                  <div
+                    class="cancel-request-card"
+                    data-cancel-request-id="{{ req.cancel_request_id }}"
+                  >
+
+                    <div class="cancel-request-card-header">
+
+                      <div class="cancel-request-id">
+                        #{{ req.cancel_request_id }}
+                      </div>
+
+                      <span class="cancel-request-status cancel-request-status-{{ req.status|lower }}">
+                        {{ req.status }}
+                      </span>
+
+                    </div>
+
+                    <div class="cancel-request-card-body">
+
+                      <dl class="dl-horizontal cancel-request-dl">
+
+                        <dt>{{ column_order_id }}</dt>
+
+                        <dd>
+                          <a
+                            href="{{ req.order_link }}"
+                            class="cancel-request-order-link"
+                          >
+                            #{{ req.order_id }}
+                            <i class="fa fa-external-link"></i>
+                          </a>
+                        </dd>
+
+
+                        <dt>{{ column_customer_id }}</dt>
+
+                        <dd>
+                          {{ req.customer_id }}
+                        </dd>
+
+
+                        <dt>{{ column_reason }}</dt>
+
+                        <dd class="cancel-request-reason">
+                          {{ req.reason|default('—') }}
+                        </dd>
+
+
+                        <dt>{{ column_date_added }}</dt>
+
+                        <dd>
+                          {{ req.date_added }}
+                        </dd>
+
+                      </dl>
+
+
+                      <div class="cancel-request-actions">
+
+                        <a
+                          href="{{ req.order_link }}"
+                          class="btn btn-default btn-sm"
+                          data-toggle="tooltip"
+                          title="{{ button_view }}"
+                        >
+                          <i class="fa fa-eye"></i>
+                          {{ button_view }}
+                        </a>
+
+
+                        {% if req.status|lower == 'pending' %}
+
+                          <a
+                            href="{{ req.reject }}"
+                            class="btn btn-danger btn-sm"
+                            data-toggle="tooltip"
+                            title="{{ button_reject }}"
+                          >
+                            <i class="fa fa-times"></i>
+                            {{ button_reject }}
+                          </a>
+
+                        {% endif %}
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                {% endfor %}
+
+              </div>
+
+
+              <div class="row cancel-request-pagination">
+                <div class="col-sm-6 text-left">
+                  {{ pagination }}
+                </div>
+              </div>
+
+
+            {% else %}
+
+              <div class="cancel-request-empty">
+
+                <i class="fa fa-inbox"></i>
+
+                <p>
+                  {{ text_no_results }}
+                </p>
+
+              </div>
+
+            {% endif %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<style>
+
+/* Main */
+
+.cancel-request-page .cancel-request-sections {
+  padding-bottom: 24px;
+}
+
+
+/* Panel */
+
+.cancel-request-page .cancel-request-panel {
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+  border-color: #e8e8e8;
+}
+
+.cancel-request-page .cancel-request-panel .panel-heading {
+  border-radius: 6px 6px 0 0;
+  background: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 16px;
+}
+
+.cancel-request-page .cancel-request-panel .panel-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cancel-request-page .cancel-request-panel .panel-title .fa {
+  margin-right: 8px;
+  color: #5a5a5a;
+}
+
+.cancel-request-page .cancel-request-panel .panel-body {
+  padding: 18px 20px;
+}
+
+
+/* Cards */
+
+.cancel-request-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cancel-request-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cancel-request-card:hover {
+  border-color: #d0d0d0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+
+/* Card header */
+
+.cancel-request-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #eef1f4 100%);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.cancel-request-id {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+
+/* Status */
+
+.cancel-request-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.cancel-request-status-pending {
+  background: #fef3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.cancel-request-status-approved {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.cancel-request-status-rejected {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+/* Card body */
+
+.cancel-request-card-body {
+  padding: 18px 20px;
+}
+
+.cancel-request-dl.dl-horizontal {
+  margin-bottom: 16px;
+}
+
+.cancel-request-dl.dl-horizontal dt {
+  width: 120px;
+  color: #6b6b6b;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.cancel-request-dl.dl-horizontal dd {
+  margin-left: 140px;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.cancel-request-order-link {
+  font-weight: 600;
+  color: #337ab7;
+}
+
+.cancel-request-order-link:hover {
+  color: #23527c;
+}
+
+.cancel-request-reason {
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+
+/* Actions */
+
+.cancel-request-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.cancel-request-actions .btn {
+  margin-right: 4px;
+}
+
+
+/* Pagination */
+
+.cancel-request-pagination {
+  margin-top: 16px;
+}
+
+
+/* Empty */
+
+.cancel-request-empty {
+  text-align: center;
+  padding: 48px 24px;
+  color: #999;
+}
+
+.cancel-request-empty .fa {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.cancel-request-empty p {
+  margin: 0;
+  font-size: 15px;
+}
+
+
+/* Filter panel */
+
+.cancel-request-filter-panel {
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border-color: #e8e8e8;
+}
+
+.cancel-request-filter-panel .panel-heading {
+  border-radius: 6px 6px 0 0;
+  background: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 16px;
+}
+
+.cancel-request-filter-panel .panel-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+</style>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+
+  /* Filter */
+
+  $('#button-filter').on('click', function() {
+
+    var url = 'index.php?route=sale/cancel_request&user_token={{ user_token }}';
+
+    var filter_status = $('select[name=\'filter_status\']').val();
+    var filter_customer = $('input[name=\'filter_customer\']').val();
+    var filter_reason = $('input[name=\'filter_reason\']').val();
+    var filter_date = $('input[name=\'filter_date\']').val();
+
+    if (filter_status) {
+      url += '&filter_status=' + encodeURIComponent(filter_status);
+    }
+
+    if (filter_customer) {
+      url += '&filter_customer=' + encodeURIComponent(filter_customer);
+    }
+
+    if (filter_reason) {
+      url += '&filter_reason=' + encodeURIComponent(filter_reason);
+    }
+
+    if (filter_date) {
+      url += '&filter_date=' + encodeURIComponent(filter_date);
+    }
+
+    location = url;
+
+  });
+
+
+  /* Date picker */
+
+  $('.date').datetimepicker({
+    pickTime: false
+  });
+
+});
+
+</script>
+
+
+<link
+  href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css"
+  type="text/css"
+  rel="stylesheet"
+  media="screen"
+/>
+
+<script
+  src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js"
+  type="text/javascript"
+></script>
+
+
+{{ footer }}

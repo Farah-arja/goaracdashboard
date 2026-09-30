@@ -1,0 +1,314 @@
+{{ header }}{{ column_left }}
+
+<div id="content">
+
+  <div class="page-header">
+    <div class="container-fluid">
+
+      <div class="pull-right">
+        <button
+          type="submit"
+          form="form-goarac-sitemap"
+          data-toggle="tooltip"
+          title="{{ button_seed }}"
+          class="btn btn-primary">
+          <i class="fa fa-refresh"></i>
+        </button>
+      </div>
+
+      <h1>{{ heading_title }}</h1>
+
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+          <li>
+            <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+
+    {% if error_warning %}
+      <div class="alert alert-danger alert-dismissible">
+        <i class="fa fa-exclamation-circle"></i>
+        {{ error_warning }}
+
+        <button type="button" class="close" data-dismiss="alert">
+          &times;
+        </button>
+      </div>
+    {% endif %}
+
+
+    {% if success %}
+      <div class="alert alert-success alert-dismissible">
+        <i class="fa fa-check-circle"></i>
+        {{ success }}
+
+        <button type="button" class="close" data-dismiss="alert">
+          &times;
+        </button>
+      </div>
+    {% endif %}
+
+
+    <!-- ========================================= -->
+    <!-- Sitemap Information -->
+    <!-- ========================================= -->
+
+    <div class="row">
+
+      <!-- Frontend URL -->
+      <div class="col-sm-4">
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+
+            <h3 class="panel-title">
+              <i class="fa fa-link"></i>
+              {{ text_frontend_url }}
+            </h3>
+
+          </div>
+
+          <div class="panel-body">
+
+            <p>
+              <strong>
+                <a href="{{ frontend_url }}" target="_blank">
+                  {{ frontend_url }}
+                </a>
+              </strong>
+            </p>
+
+            <p>
+              {{ text_sitemap_url }}:
+              <a href="{{ sitemap_url }}" target="_blank">
+                {{ sitemap_url }}
+              </a>
+            </p>
+
+            <p>
+              {{ text_robots_url }}:
+              <a href="{{ robots_url }}" target="_blank">
+                {{ robots_url }}
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Sitemap Entries -->
+      <div class="col-sm-4">
+
+        <div class="tile">
+
+          <div class="tile-heading">
+            Sitemap Entries
+          </div>
+
+          <div class="tile-body">
+
+            <i class="fa fa-sitemap"></i>
+
+            <h2 class="pull-right">
+              {{ entry_count }}
+            </h2>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Included URLs -->
+      <div class="col-sm-4">
+
+        <div class="tile">
+
+          <div class="tile-heading">
+            Included URLs
+          </div>
+
+          <div class="tile-body">
+
+            <i class="fa fa-check-circle"></i>
+
+            <h2 class="pull-right">
+              {{ included_count }}
+            </h2>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ========================================= -->
+    <!-- SEO Landing Pages -->
+    <!-- ========================================= -->
+
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+
+        <h3 class="panel-title">
+          <i class="fa fa-search"></i>
+          SEO Landing Pages
+        </h3>
+
+      </div>
+
+      <div class="panel-body">
+
+        <form
+          action="{{ action }}"
+          method="post"
+          enctype="multipart/form-data"
+          id="form-goarac-sitemap">
+
+          <p>
+            {{ text_seed_help }}
+          </p>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-refresh"></i>
+            {{ button_seed }}
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <!-- ========================================= -->
+    <!-- Sitemap Preview -->
+    <!-- ========================================= -->
+
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+
+        <h3 class="panel-title">
+          <i class="fa fa-list"></i>
+          Sitemap Preview
+        </h3>
+
+      </div>
+
+      <div class="panel-body">
+
+        <div class="table-responsive">
+
+          <table class="table table-bordered table-hover">
+
+            <thead>
+
+              <tr>
+
+                <td>{{ column_language }}</td>
+                <td>{{ column_type }}</td>
+                <td>{{ column_title }}</td>
+                <td>{{ column_url }}</td>
+                <td>{{ column_include }}</td>
+                <td>{{ column_priority }}</td>
+                <td>{{ column_changefreq }}</td>
+
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              {% for entry in entries %}
+
+                <tr>
+
+                  <td>
+                    {{ entry.language_code|upper }}
+                  </td>
+
+                  <td>
+                    {{ entry.type }}
+                  </td>
+
+                  <td>
+                    {{ entry.title }}
+                  </td>
+
+                  <td>
+                    <a href="{{ entry.url }}" target="_blank">
+                      {{ entry.url }}
+                    </a>
+                  </td>
+
+                  <td>
+
+                    {% if entry.include %}
+
+                      <span class="label label-success">
+                        {{ text_enabled }}
+                      </span>
+
+                    {% else %}
+
+                      <span class="label label-default">
+                        {{ text_disabled }}
+                      </span>
+
+                    {% endif %}
+
+                  </td>
+
+                  <td>
+                    {{ entry.priority }}
+                  </td>
+
+                  <td>
+                    {{ entry.changefreq }}
+                  </td>
+
+                </tr>
+
+              {% else %}
+
+                <tr>
+
+                  <td colspan="7" class="text-center">
+                    No sitemap entries yet.
+                  </td>
+
+                </tr>
+
+              {% endfor %}
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{{ footer }}

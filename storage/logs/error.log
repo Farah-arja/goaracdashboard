@@ -1,0 +1,1119 @@
+2026-09-01 13:53:30 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 13:55:05 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 13:55:07 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 13:56:53 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 13:56:56 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 13:57:01 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 13:58:27 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 14:03:03 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 15:16:12 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-01 15:16:13 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-03 10:02:40 - PHP Warning:  unlink(C:/xampp/htdocs/test_goarac/storage/cache/cache.store.1788422558): No such file or directory in C:\xampp\htdocs\test_goarac\system\library\cache\file.php on line 72
+2026-09-04 11:58:11 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 16:55:19 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:33 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:26:53 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:27:56 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:15 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:28:17 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:37:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:39:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:40:40 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:45:58 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:47:12 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:49:02 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:20 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:52:55 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:54:26 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:56:35 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:04 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 22:59:24 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-08 23:02:21 - PHP Warning:  Undefined array key "order_status_id" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:29:57 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:31:31 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:31:31 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:31:31 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:31:36 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:31:36 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:31:36 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:57:56 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 9:58:14 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:07:45 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:24:49 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:24:49 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:24:49 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 230
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:23 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:27:24 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:28:04 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:36:00 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:46:16 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:47:53 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:54:29 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 10:57:58 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:20:21 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 232
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 233
+2026-09-09 11:40:05 - PHP Warning:  Undefined array key "car_details" in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 11:40:05 - PHP Unknown:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\test_goarac\admin\model\sale\order.php on line 235
+2026-09-09 22:52:11 - PHP Warning:  mysqli::query(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `oc_order` o WHERE o.order_status_id &gt; '0' ORDER BY o.order_id DESC LIMI...' at line 1 in C:\xampp\htdocs\test_goarac\system\library\db\mysqli.php on line 25
+2026-09-10 16:33:35 - PHP Warning:  Undefined variable $reservation_passenger_name in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 896
+2026-09-10 16:33:35 - PHP Warning:  Undefined variable $reservation_passenger_id in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 899
+2026-09-10 16:37:33 - PHP Warning:  Undefined variable $reservation_passenger_name in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 896
+2026-09-10 16:37:33 - PHP Warning:  Undefined variable $reservation_passenger_id in C:\xampp\htdocs\test_goarac\admin\controller\sale\order.php on line 899
+2026-09-11 0:37:38 - PHP Warning:  mysqli::query(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`oc_order SET goarac_admin_note = 'test for save button note 1' WHERE order_i...' at line 1 in C:\xampp\htdocs\test_goarac\system\library\db\mysqli.php on line 25
+2026-09-11 0:41:41 - PHP Warning:  mysqli::query(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''oc_order SET' goarac_admin_note = 'admin save note test for button' WHERE or...' at line 1 in C:\xampp\htdocs\test_goarac\system\library\db\mysqli.php on line 25
+2026-09-11 0:43:18 - PHP Warning:  mysqli::query(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''oc_order' SET goarac_admin_note = 'test button' WHERE order_id = '311'' at line 1 in C:\xampp\htdocs\test_goarac\system\library\db\mysqli.php on line 25
+2026-09-17 16:59:18 - PHP Unknown:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\test_goarac\system\engine\action.php on line 65
+2026-09-24 9:31:53 - PHP Warning:  require_once(C:/xampp/htdocs/test_goarac/system/library/goarac/yolcu360/client.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\test_goarac\admin\controller\popular_locations\popular_locations.php on line 12
+2026-09-24 9:32:07 - PHP Warning:  require_once(C:/xampp/htdocs/test_goarac/system/library/goarac/yolcu360/client.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\test_goarac\admin\controller\popular_locations\popular_locations.php on line 12
+2026-09-28 13:08:09 - PHP Warning:  unlink(C:/xampp/htdocs/test_goarac/storage/cache/cache.store.1790591197): No such file or directory in C:\xampp\htdocs\test_goarac\system\library\cache\file.php on line 72
+2026-09-28 17:06:49 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\test_goarac\system\library\mail\mail.php on line 83
+2026-09-28 20:49:14 - PHP Warning:  mysqli::query(): (23000/1062): Duplicate entry '' for key 'api_key' in C:\xampp\htdocs\test_goarac\system\library\db\mysqli.php on line 25
+2026-09-30 10:06:44 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\test_goarac\storage\cache\template\75\751869c44ab402e650f0d2d8e5f7a059.php on line 269
+2026-09-30 10:06:44 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\test_goarac\storage\cache\template\75\751869c44ab402e650f0d2d8e5f7a059.php on line 269
+2026-09-30 10:07:40 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\test_goarac\storage\cache\template\75\751869c44ab402e650f0d2d8e5f7a059.php on line 269
+2026-09-30 10:07:40 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\test_goarac\storage\cache\template\75\751869c44ab402e650f0d2d8e5f7a059.php on line 269

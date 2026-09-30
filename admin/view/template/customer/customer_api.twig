@@ -1,0 +1,151 @@
+{{ header }}
+
+{{ column_left }}
+
+<div id="content">
+    <div class="container-fluid">
+
+        <div class="page-header">
+            <div class="container-fluid">
+                <h1>Customer API</h1>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Customer API Requests
+                </h3>
+            </div>
+
+            <div class="panel-body">
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-hover">
+
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>API Key</th>
+                                <th>Date Added</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            {% if api_requests %}
+
+                                {% for request in api_requests %}
+
+                                    <tr>
+
+                                        <td>
+                                            {{ request.firstname }}
+                                            {{ request.lastname }}
+                                        </td>
+
+                                        <td>
+                                            {{ request.email }}
+                                        </td>
+
+                                        <td>
+
+                                            {% if request.status == 1 %}
+
+                                                <span class="label label-success">
+                                                    Active
+                                                </span>
+
+                                            {% elseif request.status == 2 %}
+
+                                                <span class="label label-warning">
+                                                    Pending
+                                                </span>
+
+                                            {% else %}
+
+                                                <span class="label label-danger">
+                                                    Disabled
+                                                </span>
+
+                                            {% endif %}
+
+                                        </td>
+
+                                        <td>
+                                            {% if request.api_key %}
+                                                {{ request.api_key }}
+                                            {% else %}
+                                                -
+                                            {% endif %}
+                                        </td>
+
+                                        <td>
+                                            {{ request.date_added }}
+                                        </td>
+
+                                        <td>
+
+                                            {% if request.status == 2 %}
+
+                                                <a
+                                                    href="{{ approve }}&api_access_id={{ request.api_access_id }}"
+                                                    class="btn btn-success"
+                                                >
+                                                    Approve
+                                                </a>
+
+                                            {% elseif request.status == 1 %}
+
+                                                <a
+                                                    href="{{ disable }}&api_access_id={{ request.api_access_id }}"
+                                                    class="btn btn-danger"
+                                                >
+                                                    Disable
+                                                </a>
+
+                                            {% elseif request.status == 0 %}
+
+                                                <a
+                                                    href="{{ approve }}&api_access_id={{ request.api_access_id }}"
+                                                    class="btn btn-success"
+                                                >
+                                                    Enable
+                                                </a>
+
+                                            {% endif %}
+
+                                        </td>
+
+                                    </tr>
+
+                                {% endfor %}
+
+                            {% else %}
+
+                                <tr>
+                                    <td colspan="6" class="text-center">
+                                        No Customer API requests found.
+                                    </td>
+                                </tr>
+
+                            {% endif %}
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{{ footer }}
