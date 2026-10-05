@@ -2,90 +2,96 @@
 
 class ControllerApiCarSearch extends Controller
 {
-   
+    private $ttl = 900;
      public function index()
     {
-        // API authentication
-        require_once DIR_SYSTEM . 'library/goarac/api_access.php';
-
-        $apiAccess = new GoaracApiAccess();
-
-        $customer = $apiAccess->authenticate();
-
-        if (!$customer) {
-            $this->jsonResponse(0, ['Invalid or missing API key']);
-            return;
-        }
-
-        $body = json_decode(file_get_contents('php://input'), true);
+        // Read JSON body
+        $body = json_decode(file_get_contents('php://input'), true );
 
         if (!is_array($body) || empty($body)) {
-            $this->jsonResponse(0, ['Invalid or empty JSON request']);
-            return;
+        $this->jsonResponse(0, ['Invalid or empty JSON request']);
+        return;
         }
 
-        // load provider file
-        $this->loadProviderClasses();
+        // API authentication
+        // require_once DIR_SYSTEM . 'library/goarac/api_access.php';
 
-        $provider1       = new Provider1YolcuProvider1Client($this->registry);
-        $provider2       = new Provider2YolcuProvider2Client($this->registry);
-        $provider1Config = new Provider1YolcuProvider1Config($this->registry);
-        $provider2Config = new Provider2YolcuProvider2Config($this->registry);
+        // $apiAccess = new GoaracApiAccess();
 
-        // currency
-        $targetCurrency   = $this->resolveTargetCurrency($body);
-        $providerCurrency = 'TRY';
+        // $customer = $apiAccess->authenticate();
 
-        // search in each provider enabled
-        $result1 = null;
-        $result2 = null;
+        // if (!$customer) {
+        //     $this->jsonResponse(0, ['Invalid or missing API key']);
+        //     return;
+        // }
 
-        if ($provider1Config->isEnabled()) {
-            $result1 = $provider1->search($body);
+        // Provider Manager
+        require_once DIR_SYSTEM . 'library/goarac/provider_manager.php';
+        
+        $providerManager = new GoaracProviderManager( $this->registry);
 
-            if (empty($result1['success'])) {
-                $this->log->write(
-                    '[CarSearch] Provider1 failed: ' .
-                    json_encode($result1['error'] ?? 'unknown')
-                );
-            }
+// currency
+$targetCurrency   = $this->resolveTargetCurrency($body);
+$providerCurrency = 'TRY';
+
+// Search all enabled providers
+$allCars = array();
+
+$providers = $providerManager->getEnabledProviders();
+
+foreach ($providers as $provider) {
+    try {
+        $result = $provider->search($body);
+
+        if (!is_array($result) || empty($result['success'])) {
+            $this->log->write(
+                '[CarSearch] Provider failed: '
+                . $provider->getCode()
+                . ' - '
+                . json_encode(
+                    is_array($result)
+                        ? ($result['error'] ?? 'unknown')
+                        : 'invalid response'
+                )
+            );
+
+            continue;
         }
 
-        if ($provider2Config->isEnabled()) {
-            $result2 = $provider2->search($body);
+        $data = $this->getProviderData($result);
 
-            if (empty($result2['success'])) {
-                $this->log->write(
-                    '[CarSearch] Provider2 failed: ' .
-                    json_encode($result2['error'] ?? 'unknown')
-                );
-            }
-        }
+        $cars = (
+            isset($data['results']) &&
+            is_array($data['results'])
+        ) ? $data['results'] : [];
 
-        // Car Request
-        $data1 = $this->getProviderData($result1);
-        $data2 = $this->getProviderData($result2);
-
-        $cars1 = (
-            isset($data1['results']) &&
-            is_array($data1['results'])
-        ) ? $data1['results'] : [];
-
-        $cars2 = (
-            isset($data2['results']) &&
-            is_array($data2['results'])
-        ) ? $data2['results'] : [];
-
-        //  Adding the provider ID for each vehicle
-        $cars1 = $this->attachProvider($cars1, 'provider1');
-        $cars2 = $this->attachProvider($cars2, 'provider2');
-
-        // merge the cars
-        $mergedCars = $this->mergeCars(
-            $cars1,
-            $cars2,
-            $providerCurrency
+        $cars = $this->attachProvider(
+            $cars,
+            $provider->getCode()
         );
+
+        $allCars = array_merge(
+            $allCars,
+            $cars
+        );
+
+    } catch (\Throwable $e) {
+        $this->log->write(
+            '[CarSearch] Provider failed: '
+            . $provider->getCode()
+            . ' - '
+            . $e->getMessage()
+        );
+
+        continue;
+    }
+}
+
+$mergedCars = $this->mergeCars(
+    $allCars,
+    array(),
+    $providerCurrency
+);
 
         // time for quote
         $quoteCreatedAt = date('c');
@@ -144,15 +150,6 @@ class ControllerApiCarSearch extends Controller
             $body = [];
         }
 
-        // load the providers
-        $this->loadProviderClasses();
-
-        $provider1       = new Provider1YolcuProvider1Client($this->registry);
-        $provider2       = new Provider2YolcuProvider2Client($this->registry);
-        $provider1Config = new Provider1YolcuProvider1Config($this->registry);
-        $provider2Config = new Provider2YolcuProvider2Config($this->registry);
-
-       
         // read the car 
         $car = [];
 
@@ -181,31 +178,33 @@ class ControllerApiCarSearch extends Controller
             return $this->jsonResponse( 0, ['code is required'] );
         }
 
+        require_once DIR_SYSTEM . 'library/goarac/provider_manager.php';
+
+
+        $providerManager = new GoaracProviderManager(
+    
+        $this->registry
+
+        );
+
+
+        $providerClient = $providerManager->getProvider($provider);
+
+
+        if (!$providerClient) {
+   
+        return $this->jsonResponse(
+        0,
+        ['Invalid or disabled provider']
+    );
+}
+
         // language
         $language = $this->resolveRequestLanguage($body);
 
-        //Directly invoking the provider
-        $result = null;
+        // Call the selected provider dynamically
 
-        if ($provider === 'provider1') {
-
-            if (!$provider1Config->isEnabled()) {
-                return $this->jsonResponse( 0, ['Provider1 is disabled'] );
-            }
-
-            $result = $provider1->getVehicleExtraProducts( $searchID, $code,  $language );
-
-        } elseif ($provider === 'provider2') {
-
-            if (!$provider2Config->isEnabled()) {
-                return $this->jsonResponse( 0, ['Provider2 is disabled'] );
-            }
-
-            $result = $provider2->getVehicleExtraProducts( $searchID, $code, $language );
-
-        } else {
-            return $this->jsonResponse( 0, ['Invalid provider'] );
-        }
+        $result = $providerClient->getVehicleExtraProducts( $searchID, $code, $language);
 
         // Verifying the result
         if (!is_array($result)) {
@@ -292,241 +291,354 @@ class ControllerApiCarSearch extends Controller
         );
     }
     public function quote()
-    {
-        // read the body
-        $body = json_decode( file_get_contents('php://input'), true );
+{
+    // Read the body
+    $body = json_decode(file_get_contents('php://input'), true);
 
-        if (!is_array($body)) {
-            $body = [];
-        }
+    if (!is_array($body)) {
+        $body = [];
+    }
 
-        //for cars
-        $vehicle = [];
+    // Car
+    $vehicle = [];
 
-        if (isset($body['car']) && is_array($body['car'])) {
-            $vehicle = $body['car'];
-        }
+    if (isset($body['car']) && is_array($body['car'])) {
+        $vehicle = $body['car'];
+    }
 
-        if (empty($vehicle)) {
-            return $this->jsonResponse( 0, ['car is required'] );
-        }
+    if (empty($vehicle)) {
+        return $this->jsonResponse(
+            0,
+            ['car is required']
+        );
+    }
 
-        // carId
-        $carId = trim((string)(
-            $vehicle['carId']
-            ?? $body['carId']
-            ?? $body['car_id']
-            ?? ''
-        ));
+    // Car ID
+    $carId = trim((string)(
+        $vehicle['carId']
+        ?? $body['carId']
+        ?? $body['car_id']
+        ?? ''
+    ));
 
-        if ($carId === '') {
-            $carId = $this->buildCarId($vehicle);
-        }
+    if ($carId === '') {
+        $carId = $this->buildCarId($vehicle);
+    }
 
-        // for quote exp
-        $quoteExpiresAt = trim((string)(
-            $vehicle['quote_expires_at']
-            ?? $body['quote_expires_at']
-            ?? ''
-        ));
+    // Quote expiration
+    $quoteExpiresAt = trim((string)(
+        $vehicle['quote_expires_at']
+        ?? $body['quote_expires_at']
+        ?? ''
+    ));
 
-        if ($quoteExpiresAt !== '' && $this->isQuoteExpired($quoteExpiresAt)) {
-            return $this->jsonResponse( 0,[ 'Quote expired. Please refresh search results before payment.' ]);
-        }
+    if (
+        $quoteExpiresAt !== '' &&
+        $this->isQuoteExpired($quoteExpiresAt)
+    ) {
+        return $this->jsonResponse(
+            0,
+            ['Quote expired. Please refresh search results before payment.']
+        );
+    }
 
-        // currency
-        $currency = $this->resolveTargetCurrency($body);
+    // Currency
+    $currency = $this->resolveTargetCurrency($body);
 
-        // provider
-        $provider = strtolower(trim((string)(
-            $vehicle['provider']
-            ?? $vehicle['_provider']
-            ?? ''
-        )));
+    // Provider
+    $provider = strtolower(trim((string)(
+        $vehicle['provider']
+        ?? $vehicle['_provider']
+        ?? ''
+    )));
 
-        if ($provider === '') {
-            return $this->jsonResponse( 0, ['provider is required in car'] );
-        }
+    if ($provider === '') {
+        return $this->jsonResponse(
+            0,
+            ['provider is required in car']
+        );
+    }
 
-        // Standardizing the vehicle
-        $this->normalizeVehicleMoney( $vehicle, 'TRY' );
+    // Standardize vehicle money
+    $this->normalizeVehicleMoney(
+        $vehicle,
+        'TRY'
+    );
 
-        $this->applyOfficeInfo($vehicle);
-        $this->normalizeVehicleLabels($vehicle);
+    $this->applyOfficeInfo($vehicle);
+    $this->normalizeVehicleLabels($vehicle);
 
-        // If the price is in TRY, we convert it to the required currency.
-        if (!empty($vehicle['price'])) {
-            $vehicle = $this->convertVehicleToCurrency(
-                $vehicle,
-                $currency
+    // Convert car price to requested currency
+    if (!empty($vehicle['price'])) {
+        $vehicle = $this->convertVehicleToCurrency(
+            $vehicle,
+            $currency
+        );
+    }
+
+
+    $requestedExtras = (
+        isset($body['extraProducts']) &&
+        is_array($body['extraProducts'])
+    )
+        ? $body['extraProducts']
+        : [];
+
+    $selectedExtras = [];
+
+    if (!empty($requestedExtras)) {
+
+        
+        $providerManager = new GoaracProviderManager(
+            $this->registry
+        );
+
+        $providerClient = $providerManager->getProvider(
+            $provider
+        );
+
+        if (!$providerClient) {
+            return $this->jsonResponse(
+                0,
+                ['Invalid or unavailable provider: ' . $provider]
             );
         }
 
-
-        // extra products
-
-        $requestedExtras = ( isset($body['extraProducts']) && is_array($body['extraProducts'])) ? $body['extraProducts'] : [];
-
-        $selectedExtras = [];
-        if (!empty($requestedExtras)) {
-
-            $this->loadProviderClasses();
-
-            $provider1       = new Provider1YolcuProvider1Client($this->registry);
-            $provider2       = new Provider2YolcuProvider2Client($this->registry);
-            $provider1Config = new Provider1YolcuProvider1Config($this->registry);
-            $provider2Config = new Provider2YolcuProvider2Config($this->registry);
-
-            $searchID = trim((string)( $vehicle['searchID'] ?? $vehicle['search_id'] ?? '' ));
-
-            $code = trim((string)( $vehicle['code'] ?? $vehicle['providerCode'] ?? $vehicle['provider_code'] ?? '' ));
-
-            if ($searchID === '' || $code === '') {
-                return $this->jsonResponse( 0, ['searchID and code are required in car to load extra products'] );
-            }
-
-            $language = $this->resolveRequestLanguage($body);
-
-            // Refetch extras directly
-            $extraResult = null;
-
-            if ($provider === 'provider1') {
-
-                if (!$provider1Config->isEnabled()) {
-                    return $this->jsonResponse( 0, ['Provider1 is disabled'] );
-                }
-
-                $extraResult = $provider1->getVehicleExtraProducts( $searchID, $code, $language );
-
-            } elseif ($provider === 'provider2') {
-
-                if (!$provider2Config->isEnabled()) {
-                    return $this->jsonResponse( 0, ['Provider2 is disabled'] );
-                }
-
-                $extraResult = $provider2->getVehicleExtraProducts( $searchID, $code, $language );
-
-            } else {
-                return $this->jsonResponse( 0,['Invalid provider'] );
-            }
-
-            if (
-                !is_array($extraResult) || empty($extraResult['success'])
-            ) {
-                return $this->jsonResponse( 0, [ $extraResult['error']  ?? 'Unable to refresh extra products' ] );
-            }
-
-            $extraData = $this->getProviderData( $extraResult );
-
-            $availableExtras = [];
-
-            if ( isset($extraData['results']) && is_array($extraData['results']) ) {
-                $availableExtras = $extraData['results'];
-
-            } elseif (
-                isset($extraData['extraProducts']) && is_array($extraData['extraProducts'])
-            ) {
-                $availableExtras = $extraData['extraProducts'];
-
-            } elseif (
-                isset($extraData['extras']) && is_array($extraData['extras'])
-            ) {
-                $availableExtras = $extraData['extras'];
-
-            } elseif (
-                is_array($extraData) && array_is_list($extraData)
-            ) {
-                $availableExtras = $extraData;
-            }
-
-            $availableById = [];
-
-            foreach ($availableExtras as $index => $extra) {
-                if (!is_array($extra)) {
-                    continue;
-                }
-
-                $extra = $this->normalizeExtraProductMoneyReturn( $extra );
-
-                $providerExtraCode = (string)(
-                    $extra['code']
-                    ?? $extra['id']
-                    ?? $extra['extraProductCode']
-                    ?? $index
-                );
-
-                $extraProductId = substr( hash('sha256', $provider . '|' . $searchID . '|' . $code . '|' . $providerExtraCode ), 0, 24);
-
-                $extra['extraProductId'] = $extraProductId;
-
-                $availableById[$extraProductId] = $extra;
-            }
-    
-            foreach ($requestedExtras as $requestedExtra) {
-                if (!is_array($requestedExtra)) {
-                    continue;
-                }
-
-                $requestedId = trim((string)(
-                    $requestedExtra['extraProductId']
-                    ?? $requestedExtra['extra_product_id']
-                    ?? ''
-                ));
-
-                if ($requestedId === '') {
-                    continue;
-                }
-
-                if (!isset($availableById[$requestedId])) {
-                    return $this->jsonResponse(0,['Extra product not found: ' . $requestedId ] );
-                }
-
-                $selectedExtra = $availableById[$requestedId];
-                $selectedExtra['quantity'] = max( 1, (int)( $requestedExtra['quantity'] ?? 1 ) );
-                $selectedExtras[] = $selectedExtra;
-            }
+        if (!$providerClient->isEnabled()) {
+            return $this->jsonResponse(
+                0,
+                ['Selected provider is disabled']
+            );
         }
 
-        // Convert extras to the required currency.
-        if (!empty($selectedExtras)) {
-            $selectedExtras = $this->convertExtraProductsToCurrentCurrency( $selectedExtras, $currency);
+        // Search ID
+        $searchID = trim((string)(
+            $vehicle['searchID']
+            ?? $vehicle['search_id']
+            ?? ''
+        ));
+
+        // Provider vehicle code
+        $code = trim((string)(
+            $vehicle['code']
+            ?? $vehicle['providerCode']
+            ?? $vehicle['provider_code']
+            ?? ''
+        ));
+
+        if ($searchID === '' || $code === '') {
+            return $this->jsonResponse(
+                0,
+                [
+                    'searchID and code are required in car to load extra products'
+                ]
+            );
         }
 
-       
-        $cleanSelectedExtras = [];
-        foreach ($selectedExtras as $extra) {
-            $cleanSelectedExtras[] =  $this->cleanExtraProductData($extra);
-        }
-
-        // quote timestamps
-        $quoteCreatedAt = (string)(
-            $vehicle['quote_created_at']
-            ?? $body['quote_created_at']
-            ?? date('c')
+        $language = $this->resolveRequestLanguage(
+            $body
         );
 
-        if ($quoteExpiresAt === '') {
-            $quoteExpiresAt = date( 'c', time() + (int)$this->ttl );
+        
+        $extraResult = $providerClient->getVehicleExtraProducts(
+            $searchID,
+            $code,
+            $language
+        );
+
+        if (
+            !is_array($extraResult) ||
+            empty($extraResult['success'])
+        ) {
+            return $this->jsonResponse(
+                0,
+                [
+                    is_array($extraResult)
+                        ? (
+                            $extraResult['error']
+                            ?? 'Unable to refresh extra products'
+                        )
+                        : 'Unable to refresh extra products'
+                ]
+            );
         }
 
-        // Response
-        $responseData = [
-            'quote_id'          => $carId,
-            'carId'             => $carId,
-            'is_valid'          => true,
-            'quote_created_at'  => $quoteCreatedAt,
-            'quote_expires_at'  => $quoteExpiresAt,
-            'quote_ttl_seconds' => (int)(
-                $vehicle['quote_ttl_seconds']
-                ?? $this->ttl
-            ),
-            'currency'          => $currency,
-            'car'               => $this->cleanVehicleData($vehicle),
-            'extra_products'    => $cleanSelectedExtras,
-        ];
+        $extraData = $this->getProviderData(
+            $extraResult
+        );
 
-        return $this->jsonResponse( 1, [], $responseData );
+        $availableExtras = [];
+
+        if (
+            isset($extraData['results']) &&
+            is_array($extraData['results'])
+        ) {
+            $availableExtras = $extraData['results'];
+
+        } elseif (
+            isset($extraData['extraProducts']) &&
+            is_array($extraData['extraProducts'])
+        ) {
+            $availableExtras = $extraData['extraProducts'];
+
+        } elseif (
+            isset($extraData['extras']) &&
+            is_array($extraData['extras'])
+        ) {
+            $availableExtras = $extraData['extras'];
+
+        } elseif (
+            is_array($extraData) &&
+            array_is_list($extraData)
+        ) {
+            $availableExtras = $extraData;
+        }
+
+        $availableById = [];
+
+        foreach ($availableExtras as $index => $extra) {
+
+            if (!is_array($extra)) {
+                continue;
+            }
+
+            $extra = $this->normalizeExtraProductMoneyReturn(
+                $extra
+            );
+
+            $providerExtraCode = (string)(
+                $extra['code']
+                ?? $extra['id']
+                ?? $extra['extraProductCode']
+                ?? $index
+            );
+
+            $extraProductId = substr(
+                hash(
+                    'sha256',
+                    $provider
+                    . '|'
+                    . $searchID
+                    . '|'
+                    . $code
+                    . '|'
+                    . $providerExtraCode
+                ),
+                0,
+                24
+            );
+
+            $extra['extraProductId'] = $extraProductId;
+
+            $availableById[$extraProductId] = $extra;
+        }
+
+        // Validate requested extras
+        foreach ($requestedExtras as $requestedExtra) {
+
+            if (!is_array($requestedExtra)) {
+                continue;
+            }
+
+            $requestedId = trim((string)(
+                $requestedExtra['extraProductId']
+                ?? $requestedExtra['extra_product_id']
+                ?? ''
+            ));
+
+            if ($requestedId === '') {
+                continue;
+            }
+
+            if (!isset($availableById[$requestedId])) {
+                return $this->jsonResponse(
+                    0,
+                    [
+                        'Extra product not found: '
+                        . $requestedId
+                    ]
+                );
+            }
+
+            $selectedExtra = $availableById[$requestedId];
+
+            $selectedExtra['quantity'] = max(
+                1,
+                (int)(
+                    $requestedExtra['quantity']
+                    ?? 1
+                )
+            );
+
+            $selectedExtras[] = $selectedExtra;
+        }
     }
+
+    // Convert extras to requested currency
+    if (!empty($selectedExtras)) {
+        $selectedExtras =
+            $this->convertExtraProductsToCurrentCurrency(
+                $selectedExtras,
+                $currency
+            );
+    }
+
+    // Clean extras
+    $cleanSelectedExtras = [];
+
+    foreach ($selectedExtras as $extra) {
+        $cleanSelectedExtras[] =
+            $this->cleanExtraProductData(
+                $extra
+            );
+    }
+
+    // Quote timestamps
+    $quoteCreatedAt = (string)(
+        $vehicle['quote_created_at']
+        ?? $body['quote_created_at']
+        ?? date('c')
+    );
+
+    if ($quoteExpiresAt === '') {
+        $quoteExpiresAt = date(
+            'c',
+            time() + (int)$this->ttl
+        );
+    }
+
+    // Response
+    $responseData = [
+        'quote_id' => $carId,
+
+        'carId' => $carId,
+
+        'is_valid' => true,
+
+        'quote_created_at' => $quoteCreatedAt,
+
+        'quote_expires_at' => $quoteExpiresAt,
+
+        'quote_ttl_seconds' => (int)(
+            $vehicle['quote_ttl_seconds']
+            ?? $this->ttl
+        ),
+
+        'currency' => $currency,
+
+        'car' => $this->cleanVehicleData(
+            $vehicle
+        ),
+
+        'extra_products' => $cleanSelectedExtras,
+    ];
+
+    return $this->jsonResponse(
+        1,
+        [],
+        $responseData
+    );
+}
 
 
     //merge
@@ -2694,9 +2806,7 @@ class ControllerApiCarSearch extends Controller
 
     // PROVIDER DATA
 
-    private function getProviderData(
-        $providerResult
-    ) {
+    private function getProviderData($providerResult) {
 
         if (
             !isset($providerResult['data']) ||

@@ -14,13 +14,14 @@ class ControllerExtensionProviderYolcuProvider1 extends Controller {
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
-			$this->response->redirect(
-				$this->url->link(
-					'extension/provider/yolcu_provider1',
-					'user_token=' . $this->session->data['user_token'],
-					true
-				)
-			);
+			
+			// $this->response->redirect(
+			// 	$this->url->link(
+			// 		'extension/provider/yolcu_provider1',
+			// 		'user_token=' . $this->session->data['user_token'],
+			// 		true
+			// 	)
+			// );
 		}
 
 		if (isset($this->error['warning'])) {

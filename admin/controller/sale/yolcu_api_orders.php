@@ -68,27 +68,11 @@ class ControllerSaleYolcuApiOrders extends Controller
                         DIR_SYSTEM . 'library/provider1/yolcu_provider1_client.php'
                     );
 
-                    echo '<pre>';
-                    echo 'CLIENT FILE LOADED';
-                    echo '</pre>';
-
                     $client = new Provider1YolcuProvider1Client(
                         $this->registry
                     );
 
-                    echo '<pre>';
-                    echo 'CLIENT CREATED';
-                    echo '</pre>';
-
                     $response = $client->getOrderDetails($order_id);
-
-                    echo '<pre>';
-                    echo 'GET ORDER DETAILS FINISHED';
-                    echo '</pre>';
-
-                    print_r($response);
-
-                    exit;
 
                 } elseif ($provider === 'provider2') {
 
@@ -107,12 +91,7 @@ class ControllerSaleYolcuApiOrders extends Controller
 
             } catch (Exception $e) {
 
-                echo '<pre>';
-                echo 'ERROR: ';
-                echo $e->getMessage();
-                echo '</pre>';
-
-                exit;
+                $data['warning'] = $e->getMessage();
             }
         }
 

@@ -27,6 +27,17 @@ class Provider1YolcuProvider1Client
         $this->http = new Provider1YolcuProvider1Http($registry);
         $this->auth = new Provider1YolcuProvider1Auth($registry);
     }
+    public function getCode()
+
+    {
+    return 'yolcu_provider1';
+
+    }
+
+public function isEnabled()
+{
+    return $this->config->isEnabled();
+}
 
     public function search($body)
     {
@@ -49,6 +60,43 @@ class Provider1YolcuProvider1Client
             $body
         );
     }
+    public function getVehicleExtraProducts($searchId, $code, $language = null)
+{
+    $headers = array();
+
+    if ($language) {
+        $headers[] = 'Accept-Language: ' . $language;
+    }
+
+    $path = rtrim(
+        $this->config->endpointSearch(),
+        '/'
+    );
+
+    if (substr($path, -6) === '/point') {
+        $path = substr($path, 0, -6);
+    }
+
+    $path = $path
+        . '/'
+        . urlencode($searchId)
+        . '/'
+        . urlencode($code)
+        . '/extra-products';
+
+    $url = $this->buildUrl($path);
+
+    $accessToken = $this->auth->getAccessToken();
+
+    $headers[] = 'Accept: application/json';
+    $headers[] = 'Authorization: Bearer ' . $accessToken;
+
+    return $this->http->request(
+        'GET',
+        $url,
+        $headers
+    );
+}
 
     public function getOrderDetails($orderId)
     {
