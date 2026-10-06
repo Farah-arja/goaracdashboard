@@ -13,17 +13,15 @@ class ControllerApiCarSearch extends Controller
         return;
         }
 
-        // API authentication
-        // require_once DIR_SYSTEM . 'library/goarac/api_access.php';
+       // API authentication
 
-        // $apiAccess = new GoaracApiAccess();
-
-        // $customer = $apiAccess->authenticate();
-
-        // if (!$customer) {
-        //     $this->jsonResponse(0, ['Invalid or missing API key']);
-        //     return;
-        // }
+       require_once DIR_SYSTEM . 'library/goarac/api_access.php';
+       $apiAccess = new GoaracApiAccess($this->registry);
+       $apiAccessRecord = $apiAccess->authenticate();
+       if (!$apiAccessRecord) {
+       $this->jsonResponse(0, ['Invalid or missing API key']);
+       return;
+       }
 
         // Provider Manager
         require_once DIR_SYSTEM . 'library/goarac/provider_manager.php';

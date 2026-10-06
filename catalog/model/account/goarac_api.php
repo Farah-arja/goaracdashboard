@@ -28,19 +28,6 @@ class ModelAccountGoaracApi extends Model {
         return true;
     }
 
-    public function createApiKey($api_access_id) {
-        $api_key = 'GA_' . bin2hex(random_bytes(24));
-        $this->db->query("UPDATE `" . DB_PREFIX . "goarac_api_access`
-            SET
-                api_key = '" . $this->db->escape($api_key) . "',
-                status = '1',
-                date_modified = NOW()
-            WHERE api_access_id = '" . (int)$api_access_id . "'
-        ");
-
-        return $api_key;
-    }
-
     public function getCustomerByApiKey($api_key) {
         $query = $this->db->query("SELECT c.*
             FROM `" . DB_PREFIX . "goarac_api_access` a
@@ -54,6 +41,19 @@ class ModelAccountGoaracApi extends Model {
 
         return $query->row;
     }
+
+    public function getApiAccessByApiKey($api_key) {
+    $query = $this->db->query("SELECT a.*, c.firstname, c.lastname, c.email, c.customer_group_id
+        FROM `" . DB_PREFIX . "goarac_api_access` a
+        LEFT JOIN `" . DB_PREFIX . "customer` c
+            ON c.customer_id = a.customer_id
+        WHERE a.api_key = '" . $this->db->escape($api_key) . "'
+          AND a.status = '1'
+        LIMIT 1
+    ");
+
+    return $query->row;
+}
 
     public function setStatus($api_access_id, $status) {
         $this->db->query("UPDATE `" . DB_PREFIX . "goarac_api_access`
